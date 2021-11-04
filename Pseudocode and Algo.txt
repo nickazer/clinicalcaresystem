@@ -1,0 +1,20 @@
+BEGIN	
+INPUT patient name
+IF patient had and admision 
+THEN Display patient record 
+ELSE	Assessment for medical history
+	Determine suitable doctor
+	Patient Diagnosis
+	Medical precription
+IF Hospitalization need
+THEN Assign a patient room
+ELSE	Pay Hospital fees
+	Discharge
+END
+
+
+Enter patient name for checking if had an existing medical record if no then
+assess the patient medical background/history then determine a suitable doctor
+for the patient, diagnoses the patient, medical prescription, then identify
+if the patient needed a hospitalization if needed assign room for the patient
+else patient pay fees and then discharge the patient
