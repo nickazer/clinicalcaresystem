@@ -1,13 +1,12 @@
 BEGIN	
 INPUT patient name
-IF patient had and admision 
-THEN Display patient record 
+IF patient had and admision THEN Display patient record 
 ELSE	Assessment for medical history
 	Determine suitable doctor
 	Patient Diagnosis
-	Medical precription
-IF Hospitalization need
-THEN Assign a patient room
+IF needed a laboratory THEN laboratory
+ELSE 	Medical precription
+IF Hospitalization need THEN Assess for hopitalization
 ELSE	Pay Hospital fees
 	Discharge
 END
