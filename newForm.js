@@ -90,3 +90,24 @@ function radioBtn(rad) {
     }
     else radioBtn.disabled = true; radioBtn.value = '';
 }
+
+function listsofpatients() {
+
+    document.getElementById("mypatientisdone").innerHTML = null;
+
+    let patientDataArray = [];
+    patientDataArray = JSON.parse(localStorage.getItem("patientInfo"));
+    console.log(patientDataArray);
+    let patientDataTable = document.querySelector("#pdata");
+
+    patientDataArray.forEach((data, i) => {
+        let listRows = patientDataTable.insertRow(i + 1);
+        listRows.classList.add("align-middle");
+        let j = 0;
+        for (let property in data) {
+            let listCols = listRows.insertCell(j);
+            listCols.innerHTML = data[property];
+            j++;
+        }
+    });
+}

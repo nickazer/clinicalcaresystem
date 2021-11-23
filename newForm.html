@@ -36,7 +36,7 @@
             <h1>Patient Information System</h1>
             <h2>Patient Form</h2>
         </div>
-        <form class="row p-5" name="patientForm" onsubmit="return submitBtn()">
+        <form class="row p-5" id="mypatientisdone" name="patientForm" onsubmit="return submitBtn()">
             <div class="col-lg-4">
                 <label for="" class="form-label">First Name: </label>
                 <input class="form-control" type="text" name="firstname" required>
@@ -123,6 +123,28 @@
                 <button class="btn btn-danger" type="reset">Reset</button>
             </div>
         </form>
+    </div>
+    <div class="container">
+        <div class=" col-lg-1 pt-2">
+            <button class="rounded btn-info text-danger" onclick="listsofpatients()" type="button">Show Patient
+                Info</button>
+        </div>
+        <div class="table-responsive">
+            <table id="pdata" class="table table-bordered" border=1>
+                <tr>
+                    <th>First Name</th>
+                    <th>Middle Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>Birthdate</th>
+                    <th>Contact</th>
+                    <th>Gender</th>
+                    <th>Medical History</th>
+                    <th>Current Symptoms</th>
+                    <th>Medication</th>
+                </tr>
+            </table>
+        </div>
     </div>
     <script src="newForm.js"></script>
     <!-- JavaScript Bundle with Popper -->
